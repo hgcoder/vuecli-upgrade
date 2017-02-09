@@ -1,7 +1,7 @@
 <template>
     <div class="domApp">
         <h2>
-            <span>苏宁-大数据中心-前端开发部</span> 
+            <span>xxxxxxx开发部</span> 
             <router-link to="/express" tag="span" class="circleLoading keyframe">express</router-link> 
         </h2>
         <h2>2017-01-19</h2>
