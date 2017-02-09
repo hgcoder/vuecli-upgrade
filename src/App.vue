@@ -5,7 +5,7 @@
         <div class="comHeader">
             <el-menu theme="dark" default-active="1" class="el-menu-demo" mode="horizontal" @select="">
                 <el-menu-item index="1" class="logoBox">
-                    xxxxx系统
+                    Suning
                 </el-menu-item>
                 
                 <el-menu-item index="2" class="fr"><a href="" target="_blank">订单管理</a></el-menu-item>

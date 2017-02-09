@@ -7,6 +7,8 @@ var webpack = require('webpack')
 var opn = require('opn')
 var proxyMiddleware = require('http-proxy-middleware')
 var webpackConfig = require('./webpack.dev.conf')
+// 写入服务类型配置
+process.env.runType = config.runType || "spa";
 
 //配置端口
 var port = process.env.PORT || config.dev.port
@@ -21,7 +23,11 @@ var compiler = webpack(webpackConfig)
 //配置开发环境
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
   publicPath: webpackConfig.output.publicPath,
-  quiet: true
+  quiet: true,
+  stats: {
+    colors: true,
+    chunks: false
+  }
 })
 //配置热加载
 var hotMiddleware = require('webpack-hot-middleware')(compiler, {
