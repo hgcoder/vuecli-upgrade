@@ -7,7 +7,7 @@ var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrors = require('friendly-errors-webpack-plugin')
 var extObj = null;
-console.log(config.runType)
+// 根据多页及单页打包配置
 if(config.runType == "mult"){
     
     // 获取指定路径下的入口文件
