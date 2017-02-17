@@ -4,7 +4,7 @@ var path = require('path')
 module.exports = {
     build: {
         env: require('./prod.env'),
-        index: path.resolve(__dirname, '../../feProject/test/views/project02'), //打包输出文件设置
+        index: path.resolve(__dirname, '../../feProject/test/views/project02/index.html'), //打包输出文件设置
         assetsRoot: path.resolve(__dirname, '../../feProject/test/public/project02'),
         assetsSubDirectory: 'static', //打包生成的index.html中 访问路径配置 二级目录
         assetsPublicPath: '',//index.html 上引入静态资源配置 结合线上环境挂载点设置
@@ -33,5 +33,5 @@ module.exports = {
         }, 
         cssSourceMap: false
     },
-    runType:"mult" //服务运行类型 spa-单页面 mult-多页面
+    runType:"spa" //服务运行类型 spa-单页面 mult-多页面
 }
